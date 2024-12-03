@@ -1,0 +1,107 @@
+/* ChatBox container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Chat button style */
+  .chat-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Chatbox style */
+  .chat-box {
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  /* Message container */
+  .messages-container {
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  
+  /* Each message style */
+  .message {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .message strong {
+    color: #333;
+  }
+  
+  .timestamp {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  /* Loading dots animation */
+  .loading-indicator {
+    font-size: 24px;
+    text-align: center;
+    animation: loading 1s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      content: '...';
+    }
+    50% {
+      content: '..';
+    }
+    100% {
+      content: '.';
+    }
+  }
+  
+  /* Option buttons */
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .options button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .options button:hover {
+    background-color: #005f73;
+  }
+  
+  .options button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
